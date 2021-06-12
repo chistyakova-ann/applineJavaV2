@@ -12,12 +12,12 @@ public class Main {
         System.out.println("Введите первое число: ");
         double x = in.nextDouble();
         System.out.println("Введите символ арифметической операции: ");
-        String arif_symbols = in.next();
+        String arifSymbols = in.next();
         System.out.println("Введите второе число: ");
         double y = in.nextDouble();
 
         double res=0;
-        switch(arif_symbols){
+        switch(arifSymbols){
             case "+":
                 res = x+y;
                 break;
@@ -35,7 +35,7 @@ public class Main {
             default:
             System.out.println("Такого знака нет:)");return;
         }
-        System.out.print("Результат: "+x+arif_symbols+y+"=");
+        System.out.print("Результат: "+x+arifSymbols+y+"=");
         System.out.printf("%.4f",res);
     }
 }
