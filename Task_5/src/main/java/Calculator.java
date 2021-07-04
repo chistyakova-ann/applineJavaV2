@@ -50,8 +50,16 @@ public class Calculator {
             System.out.printf("%.4f", multiplication(getFirstNumber(), getSecondNumber()));
         } else if (getArifSymbol().equals("/")) {
             if (getSecondNumber() == 0) {
-                System.out.println("На ноль делить нельзя!!!");
-            } else {
+                try {
+                    throw new ArithmeticException("На ноль делить нельзя!!!");
+                    //  System.out.println("На ноль делить нельзя!!!");
+                    //   } else {
+                //    System.out.println(getFirstNumber() + " " + getArifSymbol() + " " + getSecondNumber() + "= ");
+                 //   System.out.printf("%.4f", devide(getFirstNumber(), getSecondNumber()));
+                }catch (ArithmeticException e) {
+                    System.out.println("На ноль делить нельзя!!!"+e);
+                }
+            }else{
                 System.out.println(getFirstNumber() + " " + getArifSymbol() + " " + getSecondNumber() + "= ");
                 System.out.printf("%.4f", devide(getFirstNumber(), getSecondNumber()));
             }
