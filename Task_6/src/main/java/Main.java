@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         //Чтение из файла и создание списка слов
         ReadFile readFile = new ReadFile();
-        List arrayList = readFile.readFile(".\\File.txt");
+        List arrayList = readFile.readFileNew(".\\File.txt");
 
         //Сортировка списка по алфавиту
         Collections.sort(arrayList);

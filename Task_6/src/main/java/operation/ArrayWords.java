@@ -25,6 +25,20 @@ public class ArrayWords {
     public void setArrayWords(ArrayList arrayWords) {
         this.arrayWords = arrayWords;
     }
+//добавление слова в массив
+    public void addWord(String word) {
+        ArrayList array = this.getArrayWords();
+        if (array == null) {
+            ArrayList array1 = new ArrayList();
+            array1.add(word);
+            this.setArrayWords(array1);
+
+        }else{
+//        System.out.println(word);
+        array.add(word);
+        this.setArrayWords(array);
+        }
+    }
 
     public ArrayList words(String line) {
         arrayWords = new ArrayList(Arrays.asList(line.split(" ")));
