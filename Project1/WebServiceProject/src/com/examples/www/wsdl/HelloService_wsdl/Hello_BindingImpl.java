@@ -9,7 +9,7 @@ package com.examples.www.wsdl.HelloService_wsdl;
 
 public class Hello_BindingImpl implements com.examples.www.wsdl.HelloService_wsdl.Hello_PortType{
     public java.lang.String sayHello(java.lang.String firstName) throws java.rmi.RemoteException {
-        return firstName.toString()+'\n'+"Чистякова А.С.";
+        return firstName+'\n'+"Чистякова А.С.";
     }
 
 }
